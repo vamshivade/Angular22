@@ -1,0 +1,61 @@
+<div class="flex min-h-[90vh] items-center justify-center bg-gray-100 px-4">
+  <div class="w-full max-w-md rounded-xl bg-white p-8 shadow-lg">
+    <!-- Title -->
+    <div class="mb-6 text-center">
+      <h1 class="text-3xl font-bold text-gray-800">Login</h1>
+
+      <p class="mt-2 text-gray-500">Sign in to your account</p>
+    </div>
+
+    <!-- Login Form -->
+    <form class="space-y-5">
+      <!-- Email -->
+      <div>
+        <label for="email" class="mb-2 block text-sm font-medium text-gray-700"> Email </label>
+
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+        />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password" class="mb-2 block text-sm font-medium text-gray-700">
+          Password
+        </label>
+
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your password"
+          class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+        />
+      </div>
+
+      <!-- Login Button -->
+      <button
+        type="button"
+        (click)="handleLogin()"
+        class="w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white transition hover:bg-blue-700"
+      >
+        Login
+      </button>
+    </form>
+
+    <!-- Register -->
+    <p class="mt-6 text-center text-sm text-gray-600">
+      Don't have an account?
+
+      <!-- <a [routerLink]="['/register']" class="font-medium text-blue-600 hover:text-blue-700"> Register </a> -->
+      <a
+        (click)="handleNavigateRegister()"
+        class="font-medium text-blue-600 hover:text-blue-700 cursor-pointer"
+      >
+        Register
+      </a>
+    </p>
+  </div>
+</div>

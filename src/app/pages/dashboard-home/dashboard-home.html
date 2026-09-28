@@ -1,0 +1,108 @@
+<div class="mx-auto p-6 w-11/12">
+  <!-- Header -->
+  <div class="mb-6">
+    <h1 class="text-2xl font-semibold text-gray-800">Dashboard</h1>
+    <p class="text-sm text-gray-500 mt-1">Welcome back! Here's an overview of your account.</p>
+  </div>
+
+  <!-- Stats Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-6">
+    <!-- Total Orders -->
+    <div class="bg-white rounded-lg shadow p-5">
+      <p class="text-sm text-gray-500">Total Orders</p>
+      <h2 class="text-2xl font-bold text-gray-800 mt-2">24</h2>
+      <p class="text-sm text-green-600 mt-2">+4 this month</p>
+    </div>
+
+    <!-- Pending Orders -->
+    <div class="bg-white rounded-lg shadow p-5">
+      <p class="text-sm text-gray-500">Pending Orders</p>
+      <h2 class="text-2xl font-bold text-gray-800 mt-2">5</h2>
+      <p class="text-sm text-yellow-600 mt-2">Needs attention</p>
+    </div>
+
+    <!-- Completed Orders -->
+    <div class="bg-white rounded-lg shadow p-5">
+      <p class="text-sm text-gray-500">Completed</p>
+      <h2 class="text-2xl font-bold text-gray-800 mt-2">18</h2>
+      <p class="text-sm text-green-600 mt-2">75% completed</p>
+    </div>
+
+    <!-- Total Spent -->
+    <div class="bg-white rounded-lg shadow p-5">
+      <p class="text-sm text-gray-500">Total Spent</p>
+      <h2 class="text-2xl font-bold text-gray-800 mt-2">₹72,500</h2>
+      <p class="text-sm text-blue-600 mt-2">This year</p>
+    </div>
+  </div>
+
+  <!-- Recent Orders -->
+  <div class="bg-white rounded-lg shadow">
+    <div class="p-6 border-b">
+      <h2 class="text-lg font-semibold text-gray-700">Recent Orders</h2>
+      <p class="text-sm text-gray-500 mt-1">Your latest orders are shown below.</p>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table class="w-full text-left">
+        <thead class="bg-gray-50 border-b">
+          <tr>
+            <th class="px-6 py-3 text-sm font-medium text-gray-600">Order ID</th>
+
+            <th class="px-6 py-3 text-sm font-medium text-gray-600">Product</th>
+
+            <th class="px-6 py-3 text-sm font-medium text-gray-600">Amount</th>
+
+            <th class="px-6 py-3 text-sm font-medium text-gray-600">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="border-b hover:bg-gray-50">
+            <td class="px-6 py-4 text-sm text-gray-700">#ORD001</td>
+
+            <td class="px-6 py-4 text-sm text-gray-700">Laptop</td>
+
+            <td class="px-6 py-4 text-sm text-gray-700">₹65,000</td>
+
+            <td class="px-6 py-4">
+              <span class="px-3 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+                Delivered
+              </span>
+            </td>
+          </tr>
+
+          <tr class="border-b hover:bg-gray-50">
+            <td class="px-6 py-4 text-sm text-gray-700">#ORD002</td>
+
+            <td class="px-6 py-4 text-sm text-gray-700">Headphones</td>
+
+            <td class="px-6 py-4 text-sm text-gray-700">₹3,500</td>
+
+            <td class="px-6 py-4">
+              <span class="px-3 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-full">
+                Shipped
+              </span>
+            </td>
+          </tr>
+
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 text-sm text-gray-700">#ORD003</td>
+
+            <td class="px-6 py-4 text-sm text-gray-700">Keyboard</td>
+
+            <td class="px-6 py-4 text-sm text-gray-700">₹2,000</td>
+
+            <td class="px-6 py-4">
+              <span
+                class="px-3 py-1 text-xs font-medium text-yellow-700 bg-yellow-100 rounded-full"
+              >
+                Processing
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

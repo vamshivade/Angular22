@@ -1,0 +1,11 @@
+<div class="h-screen flex flex-col overflow-hidden">
+  <!-- Fixed Header -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <app-header></app-header>
+  </header>
+
+  <!-- Scrollable Content -->
+  <main class="flex-1 pt-[10vh] overflow-y-auto">
+    <router-outlet></router-outlet>
+  </main>
+</div>
